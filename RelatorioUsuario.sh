@@ -20,6 +20,5 @@ echo -e "Nome ou Descricao: $DESCRIPTION\n"
 echo -e "Total Usado no $DIR: $USE\n"
 
 echo "Ultimo Login:"
-lastlog | head -1
-lastlog | grep "$USER"
+lastlog -u $1
 echo "===================================================================="
